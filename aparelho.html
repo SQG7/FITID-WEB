@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FITID - Aparelho</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="tela-aparelho">
+
+<div class="painel-aparelho aparelho-premium">
+
+    <div class="aparelho-topo">
+
+        <div>
+            <span class="badge">TREINO EM EXECUÇÃO</span>
+            <h1>FITID</h1>
+        </div>
+
+        <div class="status-online">
+            ● Conectado
+        </div>
+
+    </div>
+
+    <div class="aparelho-grid">
+
+        <section class="aparelho-video">
+
+            <img id="gifExercicio" src="" alt="Demonstração do exercício">
+
+        </section>
+
+        <section class="aparelho-info">
+
+            <div class="aluno-header">
+
+                <h2 id="nomeAluno">Aluno</h2>
+
+                <p>Identificação automática por RFID</p>
+
+            </div>
+
+            <span class="mini-label">Exercício Atual</span>
+
+            <h1 id="exercicio">SUPINO</h1>
+
+            <div class="treino-info">
+
+                <div class="info-card">
+                    <span>Séries restantes</span>
+                    <h3 id="series">4 séries</h3>
+                </div>
+
+                <div class="info-card">
+                    <span>Repetições</span>
+                    <h3 id="repeticoes">10 repetições</h3>
+                </div>
+
+            </div>
+
+            <div class="status-treino-box">
+
+                <span>Status</span>
+
+                <strong id="statusTreino">
+                    Em execução
+                </strong>
+
+            </div>
+
+            <div class="timer-box">
+
+                <span class="mini-label">Tempo de Descanso</span>
+
+                <h2 id="timer">45s</h2>
+
+                <button id="btnProximaSerie">
+                    Próxima Série
+                </button>
+
+                <button id="btnFinalizarTreino" class="btn-secundario">
+                    Finalizar Exercício
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <div class="proximo-box">
+
+        <span class="mini-label">Aparelho em Uso</span>
+
+        <p id="proximo">Aparelho físico</p>
+
+    </div>
+
+</div>
+
+<script src="aparelho.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FITID | Monitoramento</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="public-body">
+
+    <div class="public-container">
+
+        <div class="public-header">
+
+            <div>
+
+                <span class="public-badge">
+                    MONITORAMENTO EM TEMPO REAL
+                </span>
+
+                <h1>Lotação da Academia</h1>
+
+                <p>
+                    Acompanhe os equipamentos livres e ocupados em tempo real através do FITID.
+                </p>
+
+            </div>
+
+            <div class="public-status">
+
+                <div class="pulse"></div>
+
+                Atualização ao vivo
+
+            </div>
+
+        </div>
+
+        <div id="estatisticas"></div>
+
+        <section class="public-section">
+
+            <div class="section-card">
+
+                <h2>Status dos Equipamentos</h2>
+
+                <div id="aparelhos"></div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="publico.js"></script>
+
+</body>
+</html>

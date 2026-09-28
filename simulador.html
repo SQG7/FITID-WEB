@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITID - Simulador RFID</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="tela-aparelho">
+
+    <div class="painel-aparelho">
+        <div class="rfid-badge">LEITOR RFID</div>
+
+        <h1>FITID</h1>
+
+        <h2>Simulação da Pulseira Inteligente</h2>
+
+        <p class="rfid-descricao">
+            No hardware real, o ESP32 já saberá qual academia e qual aparelho físico ele representa.
+            No simulador, selecione a academia, escolha o aparelho e digite o RFID da pulseira.
+        </p>
+
+        <div class="rfid-reader">
+            <div class="rfid-circle">
+                <div class="rfid-wave"></div>
+                <div class="rfid-wave delay"></div>
+                📶
+            </div>
+        </div>
+
+        <select id="codigoAcademia"></select>
+        <select id="aparelhoId"></select>
+
+        <input type="text" id="rfid" placeholder="Digite o RFID da pulseira">
+
+        <button onclick="aproximarPulseira()">Aproximar Pulseira</button>
+
+        <p id="mensagemSimulador" class="form-help"></p>
+    </div>
+
+    <script src="simulador.js"></script>
+</body>
+</html>

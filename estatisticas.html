@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FITID | Estatísticas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="estatisticas-body">
+
+    <div class="estatisticas-container">
+
+        <div class="estatisticas-header">
+
+            <span class="public-badge">
+                ANÁLISE DE DESEMPENHO
+            </span>
+
+            <h1>Estatísticas do Aluno</h1>
+
+            <p>
+                Visualize frequência, exercícios realizados, ranking e desempenho individual.
+            </p>
+
+            <div class="seletor-aluno-box">
+
+                <label for="alunoSelect">
+                    Selecione o aluno:
+                </label>
+
+                <select id="alunoSelect"></select>
+
+            </div>
+
+        </div>
+
+        <div id="estatisticas"></div>
+
+        <section id="rankingContainer"></section>
+
+        <section class="section-card">
+
+            <h2>Histórico de Exercícios</h2>
+
+            <canvas id="graficoTreinos"></canvas>
+
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="estatisticas.js"></script>
+
+</body>
+</html>

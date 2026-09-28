@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FITID - Área do Aluno</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="login-body aluno-login-body">
+
+    <div class="login-bg-orb login-orb-1"></div>
+    <div class="login-bg-orb login-orb-2"></div>
+
+    <main class="login-grid">
+
+        <section class="login-hero">
+
+            <div class="login-badge">
+                FITID • acesso do aluno
+            </div>
+
+            <h1>Acompanhe seu treino pelo código da pulseira.</h1>
+
+            <p>
+                Digite o código da sua academia e o RFID da pulseira para acessar seu perfil,
+                consultar treino, histórico, desempenho e lotação da academia.
+            </p>
+
+            <div class="login-points">
+
+                <div class="login-point">
+                    <span class="login-point-value">RFID</span>
+                    <span class="login-point-text">Código da pulseira</span>
+                </div>
+
+                <div class="login-point">
+                    <span class="login-point-value">TREINO</span>
+                    <span class="login-point-text">Consulta personalizada</span>
+                </div>
+
+                <div class="login-point">
+                    <span class="login-point-value">LIVE</span>
+                    <span class="login-point-text">Lotação em tempo real</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="login-card">
+
+            <div class="login-card-top">
+
+                <div class="login-logo">F</div>
+
+                <div>
+                    <h2>Área do Aluno</h2>
+                    <p>Acesse seu perfil usando o código da pulseira</p>
+                </div>
+
+            </div>
+
+            <form id="formLoginAluno" class="login-form">
+
+                <input
+                    type="text"
+                    id="codigoAcademiaAluno"
+                    placeholder="Código da academia. Ex: fitcenter"
+                >
+
+                <input
+                    type="text"
+                    id="rfidAluno"
+                    placeholder="Digite o RFID da pulseira"
+                >
+
+                <button type="submit">
+                    Acessar Perfil
+                </button>
+
+                <p id="mensagemAluno"></p>
+
+            </form>
+
+            <a href="login.html" class="aluno-login-link">
+                Sou professor / administrador
+            </a>
+
+        </section>
+
+    </main>
+
+    <script src="aluno-login.js"></script>
+
+</body>
+</html>

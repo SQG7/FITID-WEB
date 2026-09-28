@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITID - Cadastro da Academia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+    <div class="login-bg-orb login-orb-1"></div>
+    <div class="login-bg-orb login-orb-2"></div>
+
+    <main class="login-grid">
+
+        <section class="login-hero">
+            <div class="login-badge">FITID • cadastro institucional</div>
+            <h1>Cadastre sua academia no FITID.</h1>
+            <p>
+                Crie o perfil da academia e o primeiro usuário administrador. Depois disso,
+                todo aluno, aparelho, treino e histórico ficará vinculado somente a essa academia.
+            </p>
+
+            <div class="login-points">
+                <div class="login-point">
+                    <span class="login-point-value">1</span>
+                    <span class="login-point-text">Academia separada</span>
+                </div>
+                <div class="login-point">
+                    <span class="login-point-value">2</span>
+                    <span class="login-point-text">Admin próprio</span>
+                </div>
+                <div class="login-point">
+                    <span class="login-point-value">3</span>
+                    <span class="login-point-text">Dados isolados</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="login-card">
+            <div class="login-card-top">
+                <div class="login-logo">F</div>
+                <div>
+                    <h2>Nova Academia</h2>
+                    <p>Crie o acesso administrativo</p>
+                </div>
+            </div>
+
+            <form id="formCadastroAcademia" class="login-form">
+                <input type="text" id="nomeAcademia" placeholder="Nome da academia">
+                <input type="text" id="codigoAcademia" placeholder="Código público. Ex: fitcenter">
+                <input type="text" id="nomeAdmin" placeholder="Nome do administrador">
+                <input type="email" id="emailAdmin" placeholder="E-mail do administrador">
+                <input type="password" id="senhaAdmin" placeholder="Senha">
+
+                <button type="submit">Cadastrar Academia</button>
+
+                <p id="mensagemCadastro"></p>
+            </form>
+
+            <a href="login.html" class="aluno-login-link">
+                Já tenho acesso administrativo
+            </a>
+        </section>
+
+    </main>
+
+    <script src="cadastro-academia.js"></script>
+</body>
+</html>

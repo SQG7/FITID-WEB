@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login FITID</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+    <div class="login-bg-orb login-orb-1"></div>
+    <div class="login-bg-orb login-orb-2"></div>
+
+    <main class="login-grid">
+
+        <section class="login-hero">
+            <div class="login-badge">FITID • acesso do professor</div>
+
+            <h1>Controle treinos, aparelhos e lotação em tempo real.</h1>
+
+            <p>
+                O FITID integra RFID, painel administrativo e monitoramento inteligente
+                para modernizar a experiência dentro da academia.
+            </p>
+
+            <div class="login-points">
+                <div class="login-point">
+                    <span class="login-point-value">RFID</span>
+                    <span class="login-point-text">Identificação automática</span>
+                </div>
+
+                <div class="login-point">
+                    <span class="login-point-value">LIVE</span>
+                    <span class="login-point-text">Lotação em tempo real</span>
+                </div>
+
+                <div class="login-point">
+                    <span class="login-point-value">PRO</span>
+                    <span class="login-point-text">Painel do professor</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="login-card">
+            <div class="login-card-top">
+                <div class="login-logo">F</div>
+                <div>
+                    <h2>Login do Professor</h2>
+                    <p>Acesse o painel administrativo do FITID</p>
+                </div>
+            </div>
+
+            <div class="login-form">
+                <input type="email" id="email" placeholder="E-mail">
+                <input type="password" id="senha" placeholder="Senha">
+
+                <button onclick="fazerLogin()">
+                    Entrar
+                </button>
+
+                <p id="mensagem"></p>
+
+                <a href="cadastro-academia.html" class="aluno-login-link">
+                    Cadastrar nova academia
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>

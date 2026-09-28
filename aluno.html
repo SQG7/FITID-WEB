@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FITID - Aluno</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body class="aluno-body">
+
+<div class="aluno-container">
+
+    <header class="aluno-header-page">
+
+        <div>
+            <span class="public-badge">ÁREA DO ALUNO</span>
+            <h1 id="nomeAlunoApp">Olá, aluno</h1>
+            <p>Acompanhe seu treino, histórico, desempenho e lotação da academia.</p>
+        </div>
+
+        <div class="aluno-header-actions">
+
+            <a href="publico.html" class="secondary-btn">
+                Ver Lotação Pública
+            </a>
+
+            <button id="btnSairAluno" class="btn-secundario">
+                Sair
+            </button>
+
+        </div>
+
+    </header>
+
+    <section id="estatisticasAluno"></section>
+
+    <section class="aluno-grid">
+
+        <div class="section-card">
+
+            <h2>Treino Atual</h2>
+
+            <div id="treinoAtual"></div>
+
+        </div>
+
+        <div class="section-card">
+
+            <h2>Lotação Agora</h2>
+
+            <div id="lotacaoAluno"></div>
+
+        </div>
+
+    </section>
+
+    <section class="section-card">
+
+        <h2>Histórico Recente</h2>
+
+        <div id="historicoAluno"></div>
+
+    </section>
+
+    <section class="section-card">
+
+        <h2>Relatório</h2>
+
+        <p class="aluno-texto-apoio">
+            Gere um relatório em PDF com seus exercícios registrados no FITID.
+        </p>
+
+        <a id="linkRelatorioAluno" href="#" target="_blank" class="primary-btn">
+            Abrir Relatório PDF
+        </a>
+
+    </section>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="aluno.js"></script>
+
+</body>
+</html>
