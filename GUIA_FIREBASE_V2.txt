@@ -1,0 +1,29 @@
+FITID - CONFIGURAÇÃO DO FIREBASE AUTHENTICATION
+
+1) Acesse o Firebase Console e crie/abra o projeto do FITID.
+2) Em Authentication > Sign-in method, habilite E-mail/senha.
+3) Em Configurações do projeto > Seus apps, registre uma aplicação Web.
+4) Copie os campos da configuração Firebase.
+5) WEB:
+   - copie fitid-react/.env.example para fitid-react/.env.local
+   - substitua "cole_aqui" pelos dados do Firebase.
+6) MOBILE:
+   - copie fitid-mobile/.env.example para fitid-mobile/.env.development
+   - use os MESMOS dados do projeto Firebase.
+7) Na pasta fitid-react, execute npm install para instalar o pacote firebase.
+8) Na pasta fitid-mobile, execute npm install.
+9) Teste nesta ordem:
+   a) criar usuário;
+   b) entrar com e-mail/senha;
+   c) tentar abrir rota/tela protegida sem login;
+   d) fazer logout;
+   e) conferir o usuário criado no Firebase Console > Authentication > Users.
+
+ATENÇÃO PARA O BANCO ATUAL DO FITID
+- Se vocês quiserem entrar com um administrador que JÁ existe no MySQL, criem no Firebase Authentication um usuário com o MESMO e-mail e a MESMA senha desse administrador.
+- Não usem a tela "Cadastrar academia" só para criar esse usuário, porque essa tela também cria uma nova academia no MySQL.
+- Para demonstrar criação de usuário pelo sistema, vocês podem usar a tela de cadastro em uma base de teste ou a tela "Criar uma conta" do Mobile.
+
+IMPORTANTE
+- Não envie .env.local ou .env.development para o GitHub.
+- O professor orientou usar somente Firebase Authentication nesta etapa. O MySQL foi mantido.

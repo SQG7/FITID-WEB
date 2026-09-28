@@ -1,0 +1,14 @@
+node_modules/
+fitid-react/node_modules/
+fitid-react/dist/
+fitid-mobile/node_modules/
+fitid-mobile/.expo/
+.env
+.env.local
+.env.development
+.env.production
+!.env.example
+!fitid-react/.env.example
+!fitid-mobile/.env.example
+*.log
+.DS_Store
